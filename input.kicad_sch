@@ -757,7 +757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical"
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
 			(at 72.39 68.58 0)
 			(effects
 				(font
@@ -766,7 +766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" "~"
 			(at 72.39 68.58 0)
 			(effects
 				(font

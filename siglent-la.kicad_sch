@@ -5,29 +5,50 @@
 	(uuid "bd2565cb-fb9c-41f5-8760-181b016209dc")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_Coaxial"
+		(symbol "Connector:RJ45"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0.254 3.048 0)
+				(at -5.08 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Value" "Conn_Coaxial"
-				(at 2.921 0 90)
+			(property "Value" "RJ45"
+				(at 2.54 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
+				(at 0 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -36,7 +57,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" " ~"
+			(property "ki_keywords" "8P8C RJ socket connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -45,7 +66,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(property "ki_fp_filters" "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -54,40 +75,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_Coaxial_0_1"
-				(arc
-					(start -1.778 -0.508)
-					(mid 0.2311 -1.8066)
-					(end 1.778 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "RJ45_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy -0.508 0)
+						(xy -5.08 4.445) (xy -6.35 4.445)
 					)
 					(stroke
 						(width 0)
@@ -99,7 +90,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.54) (xy 0 -1.778)
+						(xy -5.08 5.715) (xy -6.35 5.715)
 					)
 					(stroke
 						(width 0)
@@ -109,35 +100,109 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 0 0)
-					(radius 0.508)
+				(polyline
+					(pts
+						(xy -6.35 -3.175) (xy -5.08 -3.175) (xy -5.08 -3.175)
+					)
 					(stroke
-						(width 0.2032)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(arc
-					(start 1.778 0)
-					(mid 0.2099 1.8101)
-					(end -1.778 0.508)
+				(polyline
+					(pts
+						(xy -6.35 -1.905) (xy -5.08 -1.905) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -0.635) (xy -5.08 -0.635) (xy -5.08 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0.635) (xy -5.08 0.635) (xy -5.08 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 1.905) (xy -5.08 1.905) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.175) (xy -6.35 3.175) (xy -6.35 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -4.445) (xy -6.35 6.985) (xy 3.81 6.985) (xy 3.81 4.445) (xy 5.08 4.445) (xy 5.08 3.175)
+						(xy 6.35 3.175) (xy 6.35 -0.635) (xy 5.08 -0.635) (xy 5.08 -1.905) (xy 3.81 -1.905) (xy 3.81 -4.445)
+						(xy -6.35 -4.445) (xy -6.35 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 7.62 12.7)
+					(end -7.62 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 			)
-			(symbol "Conn_Coaxial_1_1"
+			(symbol "RJ45_1_1"
 				(pin passive line
-					(at -5.08 0 0)
+					(at 10.16 -7.62 180)
 					(length 2.54)
-					(name "In"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -153,9 +218,238 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
+					(at 10.16 -5.08 180)
 					(length 2.54)
-					(name "Ext"
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1049,12 +1343,6 @@
 		(uuid "7b9e34f1-9ce3-438a-8704-07d36ffe8165")
 	)
 	(junction
-		(at 168.91 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "82422990-6d5c-47b3-b68a-ccb0e3e94d55")
-	)
-	(junction
 		(at 140.335 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1079,22 +1367,10 @@
 		(uuid "ae503cc0-f50e-4c5e-ae1c-a6ed5f7f775a")
 	)
 	(junction
-		(at 246.38 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b5e6cd3b-3bd2-4ac7-bb80-87c141abf911")
-	)
-	(junction
 		(at 140.335 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b8c59cbc-0589-4eb4-9f7f-97b07cf8bba2")
-	)
-	(junction
-		(at 237.49 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "baba7642-f930-46c9-91c8-8e02a1e5e8a1")
 	)
 	(junction
 		(at 106.045 71.12)
@@ -1122,7 +1398,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 58.42) (xy 142.24 58.42)
+			(xy 163.83 46.99) (xy 175.26 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1142,7 +1418,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 78.74) (xy 142.24 78.74)
+			(xy 157.48 86.36) (xy 175.26 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1152,7 +1428,17 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 53.34) (xy 142.24 53.34)
+			(xy 182.88 86.36) (xy 189.23 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ccec347-8d02-4bf8-a871-aecf095927f0")
+	)
+	(wire
+		(pts
+			(xy 162.56 41.91) (xy 175.26 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1162,7 +1448,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 73.66) (xy 142.24 73.66)
+			(xy 158.75 81.28) (xy 175.26 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1172,13 +1458,23 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 78.74) (xy 107.95 78.74)
+			(xy 78.74 82.55) (xy 95.25 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0edccd67-c082-4409-8df4-3c3329946397")
+	)
+	(wire
+		(pts
+			(xy 163.83 58.42) (xy 138.43 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f0009a7-4406-45e3-bd39-8dea4df4e961")
 	)
 	(wire
 		(pts
@@ -1212,7 +1508,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 83.82) (xy 107.95 83.82)
+			(xy 78.74 87.63) (xy 96.52 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1232,6 +1528,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 53.34) (xy 138.43 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dc371d2-80d2-4706-81b7-2443b05b2f8b")
+	)
+	(wire
+		(pts
 			(xy 140.335 81.28) (xy 138.43 81.28)
 		)
 		(stroke
@@ -1242,7 +1548,17 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 68.58) (xy 142.24 68.58)
+			(xy 195.58 81.28) (xy 205.74 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20f4058c-f885-4158-b865-9fc838fdb7e8")
+	)
+	(wire
+		(pts
+			(xy 160.02 76.2) (xy 175.26 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1259,6 +1575,16 @@
 			(type default)
 		)
 		(uuid "25c54597-aaca-42cb-bd3b-4ad795fda520")
+	)
+	(wire
+		(pts
+			(xy 201.93 46.99) (xy 212.09 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fd82a89-596d-4f96-8fe8-f7896e698fbc")
 	)
 	(wire
 		(pts
@@ -1279,6 +1605,26 @@
 			(type default)
 		)
 		(uuid "352e1e05-6ab9-40e6-b510-f69faddf5f6a")
+	)
+	(wire
+		(pts
+			(xy 201.93 41.91) (xy 212.09 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "353116de-ccf3-43fe-95ad-f26734a9c572")
+	)
+	(wire
+		(pts
+			(xy 161.29 36.83) (xy 161.29 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "376bf7b7-b535-4ef1-9783-7f444abab73b")
 	)
 	(wire
 		(pts
@@ -1322,6 +1668,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 76.2) (xy 160.02 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "433dc3df-8a7a-4e95-9c2a-f3bc1e4976a2")
+	)
+	(wire
+		(pts
 			(xy 106.045 71.12) (xy 106.045 76.2)
 		)
 		(stroke
@@ -1342,23 +1698,23 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 48.26) (xy 107.95 48.26)
+			(xy 182.88 81.28) (xy 189.23 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "477e45fb-54c2-4744-a583-65ceda9a2e92")
+	)
+	(wire
+		(pts
+			(xy 78.74 39.37) (xy 90.17 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "47dff86c-cdcf-4c40-a858-5525818ccebe")
-	)
-	(wire
-		(pts
-			(xy 172.72 113.03) (xy 241.3 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bac7929-7af5-45bc-ba84-210453b5efe9")
 	)
 	(wire
 		(pts
@@ -1372,7 +1728,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 73.66) (xy 107.95 73.66)
+			(xy 78.74 77.47) (xy 93.98 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1382,7 +1738,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 53.34) (xy 107.95 53.34)
+			(xy 78.74 44.45) (xy 88.9 44.45)
 		)
 		(stroke
 			(width 0)
@@ -1402,6 +1758,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 68.58) (xy 107.95 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54fbb56c-ab57-4c09-bf01-75f738395b06")
+	)
+	(wire
+		(pts
 			(xy 106.045 55.88) (xy 107.95 55.88)
 		)
 		(stroke
@@ -1409,6 +1775,46 @@
 			(type default)
 		)
 		(uuid "55dd7f0b-3df0-4f00-8be1-639160e59ae9")
+	)
+	(wire
+		(pts
+			(xy 96.52 83.82) (xy 107.95 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5647923a-b45a-44d7-a5a5-3366c10cab14")
+	)
+	(wire
+		(pts
+			(xy 182.88 41.91) (xy 189.23 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5de491b7-053e-4daf-a91c-856b93b63eff")
+	)
+	(wire
+		(pts
+			(xy 93.98 73.66) (xy 107.95 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63077fb5-d5ee-44fa-93f4-c271e522bddb")
+	)
+	(wire
+		(pts
+			(xy 165.1 52.07) (xy 165.1 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "644a281c-a6aa-41ce-9d7e-9071a743e658")
 	)
 	(wire
 		(pts
@@ -1432,6 +1838,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 91.44) (xy 156.21 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c720ebe-9c25-4c5d-9391-026738370bde")
+	)
+	(wire
+		(pts
 			(xy 140.335 81.28) (xy 140.335 88.265)
 		)
 		(stroke
@@ -1449,6 +1865,46 @@
 			(type default)
 		)
 		(uuid "7572e715-bdf0-4769-89fb-caf4c15718aa")
+	)
+	(wire
+		(pts
+			(xy 158.75 73.66) (xy 138.43 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7812b450-33f6-452f-bb15-aa55aa5830e9")
+	)
+	(wire
+		(pts
+			(xy 182.88 91.44) (xy 189.23 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a3e3693-be95-4331-a781-7d6c07c6468c")
+	)
+	(wire
+		(pts
+			(xy 90.17 48.26) (xy 107.95 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b054d78-0773-4e75-b673-9a3c77edbb34")
+	)
+	(wire
+		(pts
+			(xy 163.83 46.99) (xy 163.83 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e211197-ca71-453a-8386-3bfdae73c6bf")
 	)
 	(wire
 		(pts
@@ -1502,13 +1958,53 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 63.5) (xy 107.95 63.5)
+			(xy 78.74 54.61) (xy 86.36 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8f6e4250-104f-416f-9b98-299f1bd984b9")
+	)
+	(wire
+		(pts
+			(xy 182.88 52.07) (xy 189.23 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b076e9-2edc-4f5b-829c-50642f4dcaab")
+	)
+	(wire
+		(pts
+			(xy 157.48 78.74) (xy 138.43 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92c2caf2-6554-42a5-bdb0-f76496adadce")
+	)
+	(wire
+		(pts
+			(xy 86.36 63.5) (xy 107.95 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9756d657-d057-4f47-abcf-6324bdbf3521")
+	)
+	(wire
+		(pts
+			(xy 182.88 36.83) (xy 189.23 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a750c80-a2c1-463c-97b1-28b25eb1da0d")
 	)
 	(wire
 		(pts
@@ -1522,6 +2018,26 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 81.28) (xy 158.75 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0ef1b3b-53de-40b2-b468-2f83d9b4f5bb")
+	)
+	(wire
+		(pts
+			(xy 95.25 78.74) (xy 107.95 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1334b34-70e6-4bcb-9174-334eab420c36")
+	)
+	(wire
+		(pts
 			(xy 140.335 66.04) (xy 140.335 71.12)
 		)
 		(stroke
@@ -1529,6 +2045,16 @@
 			(type default)
 		)
 		(uuid "a5211dff-e409-48fe-a7e6-57ef54687dc6")
+	)
+	(wire
+		(pts
+			(xy 182.88 46.99) (xy 189.23 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad737c5d-53f6-4f16-8b21-4b33c45dff03")
 	)
 	(wire
 		(pts
@@ -1552,7 +2078,17 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 83.82) (xy 142.24 83.82)
+			(xy 88.9 53.34) (xy 107.95 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2eeb1a4-79f4-4188-bc9c-b9f9c0ea5b64")
+	)
+	(wire
+		(pts
+			(xy 156.21 91.44) (xy 175.26 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1562,7 +2098,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 58.42) (xy 107.95 58.42)
+			(xy 78.74 49.53) (xy 87.63 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1582,6 +2118,26 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 41.91) (xy 162.56 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c21d3ce5-00c1-43d9-9e0b-e18da71f31ba")
+	)
+	(wire
+		(pts
+			(xy 195.58 91.44) (xy 205.74 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c229df13-6c33-4738-b637-cba2aa21008c")
+	)
+	(wire
+		(pts
 			(xy 140.335 55.88) (xy 140.335 60.96)
 		)
 		(stroke
@@ -1589,6 +2145,26 @@
 			(type default)
 		)
 		(uuid "c33a6016-577b-4b01-a6f2-7293027f6fc3")
+	)
+	(wire
+		(pts
+			(xy 201.93 52.07) (xy 212.09 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c360e4a9-3827-4638-9c55-8bb565753c7d")
+	)
+	(wire
+		(pts
+			(xy 160.02 68.58) (xy 138.43 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c430b18d-1086-41cd-8dff-087a582c1854")
 	)
 	(wire
 		(pts
@@ -1612,13 +2188,43 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 63.5) (xy 142.24 63.5)
+			(xy 165.1 52.07) (xy 175.26 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d540606d-4072-424c-b328-b35cea6ad67d")
+	)
+	(wire
+		(pts
+			(xy 165.1 63.5) (xy 138.43 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5e984b1-216b-479a-894b-a943b9423fb3")
+	)
+	(wire
+		(pts
+			(xy 195.58 86.36) (xy 205.74 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6a41b27-064e-4ea3-b256-a50190abf17a")
+	)
+	(wire
+		(pts
+			(xy 201.93 36.83) (xy 212.09 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9b32fcb-fa62-41b7-83f4-f15137bc6962")
 	)
 	(wire
 		(pts
@@ -1632,13 +2238,43 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 68.58) (xy 107.95 68.58)
+			(xy 87.63 58.42) (xy 107.95 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db9cc499-6029-465c-84ae-f15abbe26fd1")
+	)
+	(wire
+		(pts
+			(xy 161.29 48.26) (xy 138.43 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e04966a3-c585-4219-8a82-b82e185af083")
+	)
+	(wire
+		(pts
+			(xy 78.74 72.39) (xy 92.71 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e0c703fa-23d5-4102-b780-fb876c833984")
+	)
+	(wire
+		(pts
+			(xy 182.88 76.2) (xy 189.23 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef22eb18-10f8-4651-8971-3b5f734da601")
 	)
 	(wire
 		(pts
@@ -1652,6 +2288,26 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 83.82) (xy 138.43 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5f191fb-a53f-4afa-a098-8464125fd549")
+	)
+	(wire
+		(pts
+			(xy 157.48 86.36) (xy 157.48 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6195bd7-e2d8-4af7-93ad-24aae90dd07b")
+	)
+	(wire
+		(pts
 			(xy 140.335 76.2) (xy 140.335 81.28)
 		)
 		(stroke
@@ -1662,7 +2318,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 48.26) (xy 142.24 48.26)
+			(xy 161.29 36.83) (xy 175.26 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1670,8 +2326,40 @@
 		)
 		(uuid "fb1b0792-a5cd-4fb4-8ae0-4313a7daec37")
 	)
-	(label "15"
-		(at 195.58 113.03 0)
+	(wire
+		(pts
+			(xy 195.58 76.2) (xy 205.74 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb5633ac-bc39-45a0-9475-ffc9eec04bd0")
+	)
+	(label "c.DATA_0"
+		(at 204.47 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0086d487-e8bc-4f01-b4d4-ee5d0567bb66")
+	)
+	(label "c.DATA_1"
+		(at 204.47 46.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0605a8f6-e345-426a-8145-e1070ec51b63")
+	)
+	(label "a.DATA_2"
+		(at 80.01 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1679,7 +2367,326 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "449b9d38-98f7-42fd-8164-a4e87c247fcc")
+		(uuid "0614379d-ac11-4053-b386-24c00a90276b")
+	)
+	(label "a.DATA_3"
+		(at 96.52 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0a64b7c8-2a78-41af-adb6-255a5bcf3865")
+	)
+	(label "a.DATA_0"
+		(at 80.01 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ae31f85-c0d9-484d-b67e-a3b13b3f19fa")
+	)
+	(label "a.DATA_2"
+		(at 96.52 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "13e5535e-2324-4cdb-9841-6dd8ae30a9b0")
+	)
+	(label "b.DATA_2"
+		(at 95.25 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "169363c5-d5b0-4558-bc2b-e7efaa66b675")
+	)
+	(label "b.DATA_3"
+		(at 95.25 48.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "31525bc1-3d55-4bc4-a43d-c5e33b3065f8")
+	)
+	(label "d.DATA_0"
+		(at 203.2 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "328dbac4-4668-4983-a55a-2533e7ebc166")
+	)
+	(label "b.DATA_0"
+		(at 81.28 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "464f9389-c093-4bd5-b2bb-62fa5342b2a6")
+	)
+	(label "b.DATA_2"
+		(at 81.28 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "480c49a6-7d74-4933-b6fd-718865a543dd")
+	)
+	(label "b.DATA_1"
+		(at 81.28 44.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ac7ecbf-8ff9-4ab8-94e8-c7d2972e5b7f")
+	)
+	(label "c.DATA_0"
+		(at 184.15 36.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4acf8cb5-6faf-4422-8546-337c34cf9c70")
+	)
+	(label "a.DATA_0"
+		(at 96.52 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4bea1f78-e344-4374-881c-9b162e97d31a")
+	)
+	(label "a.DATA_3"
+		(at 80.01 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d25e147-7de6-4dbe-8c79-8b6909239cb6")
+	)
+	(label "d.DATA_2"
+		(at 203.2 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5738584f-0b04-49a8-8230-0e79255898ac")
+	)
+	(label "d.DATA_3"
+		(at 182.88 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ecf78bd-5a69-423d-97f5-bf2a457a3d16")
+	)
+	(label "d.DATA_1"
+		(at 182.88 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "63a96824-dafd-4e1e-b03e-98a9ac967ba7")
+	)
+	(label "c.DATA_1"
+		(at 184.15 41.91 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d1ba1cb-1350-4f61-a25b-db6ef0870dad")
+	)
+	(label "c.DATA_3"
+		(at 184.15 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d63613f-184e-487a-85ec-86cf4e6d4c1e")
+	)
+	(label "c.DATA_2"
+		(at 204.47 41.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "79c4fd5f-ed40-4f0b-b8d0-ab9e61d0c879")
+	)
+	(label "c.DATA_3"
+		(at 204.47 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b7a54d6-849c-42ec-a690-9a7be29f395e")
+	)
+	(label "d.DATA_1"
+		(at 203.2 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d68fae0-d7bc-4b83-a36c-1b177fe0abc6")
+	)
+	(label "d.DATA_2"
+		(at 182.88 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9eb2b474-4e1b-450d-8cb9-da56e07b4ce1")
+	)
+	(label "b.DATA_0"
+		(at 95.25 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b697ca7b-bb86-4587-a73a-928403f245c6")
+	)
+	(label "b.DATA_1"
+		(at 95.25 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c7558648-baef-44ab-9911-69cd3d5cdbf4")
+	)
+	(label "d.DATA_0"
+		(at 182.88 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c770e11d-064d-48ac-b5ef-afd6d290c916")
+	)
+	(label "d.DATA_3"
+		(at 203.2 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ce3ee783-7ef2-45f7-a192-693df9c16236")
+	)
+	(label "b.DATA_3"
+		(at 81.28 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d028b51f-ef82-4435-bc67-8f23c15b2093")
+	)
+	(label "a.DATA_1"
+		(at 96.52 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0850f6a-c24c-4614-b0c7-d97d78777a05")
+	)
+	(label "a.DATA_1"
+		(at 80.01 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e9747079-4340-4eba-a021-b8b26a0ffeec")
+	)
+	(label "c.DATA_2"
+		(at 184.15 46.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f74fbe4f-3ae0-4fcb-ba70-a53297ee2de1")
 	)
 	(global_label "GND"
 		(shape input)
@@ -1704,34 +2711,121 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_Coaxial")
-		(at 246.38 113.03 0)
+		(lib_id "Connector:RJ45")
+		(at 222.25 44.45 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "24b48e24-90b2-485f-80ae-739565f4816d")
-		(property "Reference" "J5"
-			(at 250.19 112.0532 0)
+		(fields_autoplaced yes)
+		(uuid "0edf4901-78c4-445a-98d0-2a7aefcd7606")
+		(property "Reference" "J103"
+			(at 231.14 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "IPEX-004"
-			(at 250.19 114.5932 0)
+		(property "Value" "RJHSE-5380"
+			(at 231.14 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
-			(at 246.38 113.03 0)
+		(property "Footprint" "Connector_RJ:RJ45_OST_PJ012-8P8CX_Vertical"
+			(at 222.25 45.085 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/on-shore-technology-inc/PJ012-8P8C1/6566534"
+			(at 222.25 45.085 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 222.25 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "2fede53e-d8fe-4aa0-b858-a18f7668d376")
+		)
+		(pin "8"
+			(uuid "ef17efc2-457d-457d-8e21-68434a90c4c0")
+		)
+		(pin "2"
+			(uuid "e7c1e03a-9e24-451f-b3dd-63c034f8149d")
+		)
+		(pin "3"
+			(uuid "24f8bcce-dee9-42f9-94bf-8130fddd1640")
+		)
+		(pin "1"
+			(uuid "71d737dc-21cd-49b0-856a-a86b67892577")
+		)
+		(pin "5"
+			(uuid "bbb477de-213d-4ebf-9c56-1f45c68aef3f")
+		)
+		(pin "7"
+			(uuid "8d65a205-a1be-4c97-bea9-9dc9cd4bfc31")
+		)
+		(pin "6"
+			(uuid "dad14dd7-8ec9-4ece-8fb8-340ba47a4385")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "J103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a2fa2e9-28c3-4cdf-9b59-f7ffb44b9926")
+		(property "Reference" "R108"
+			(at 74.93 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 74.93 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 74.93 89.408 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1740,7 +2834,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 246.38 113.03 0)
+			(at 74.93 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1748,8 +2842,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 246.38 113.03 0)
+		(property "Description" "Resistor"
+			(at 74.93 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1757,16 +2851,25 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "e334bf7e-2e44-4e9c-8ff9-ad8868b90ffc")
+		(property "LCSC" "C22787"
+			(at 74.93 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "6fdd3c9e-5a89-4369-bd88-dd1a9503648d")
+			(uuid "5522b13c-a846-4ddf-b7ae-dcabbcf97b42")
+		)
+		(pin "1"
+			(uuid "1bde622e-381f-4dcc-a029-ea20af978c43")
 		)
 		(instances
 			(project "siglent-la"
 				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(reference "J5")
+					(reference "R108")
 					(unit 1)
 				)
 			)
@@ -1774,17 +2877,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 168.91 88.9 0)
-		(mirror y)
+		(at 71.12 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4fdbd6ff-a81e-404e-ab13-b2d77b2a8dd6")
-		(property "Reference" "#PWR023"
-			(at 168.91 95.25 0)
+		(uuid "230e6085-7462-4f81-92d7-17c84b2dd49f")
+		(property "Reference" "#PWR0107"
+			(at 77.47 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1793,15 +2895,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.91 93.98 0)
+			(at 74.93 85.0899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 88.9 0)
+			(at 71.12 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1810,7 +2913,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 88.9 0)
+			(at 71.12 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1818,8 +2921,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 168.91 88.9 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1828,12 +2931,541 @@
 			)
 		)
 		(pin "1"
-			(uuid "85a3b57f-68e6-4473-afc7-4c4bd5a05e69")
+			(uuid "cf865140-a032-4d1b-80af-3c5f07dd7cbd")
 		)
 		(instances
 			(project "siglent-la"
 				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(reference "#PWR023")
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "258677e2-d1fc-42e1-8359-5418f3a256fa")
+		(property "Reference" "R105"
+			(at 74.93 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 74.93 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 74.93 56.388 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 74.93 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "47884440-69e8-4917-91e2-1b2f6d01499c")
+		)
+		(pin "1"
+			(uuid "49288f8a-36c9-41e6-afa2-67b1e99cd85d")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 90.17 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d7e6587-1dd8-4e9b-8f7d-9640fbf450d9")
+		(property "Reference" "#PWR0108"
+			(at 77.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "24c8fb40-5a6c-4fe6-b5f8-5287d683ab86")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ45")
+		(at 60.96 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a42f9d8-01be-478e-8803-9fd9e2dab6ee")
+		(property "Reference" "J101"
+			(at 60.96 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJHSE-5380"
+			(at 60.96 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_RJ:RJ45_OST_PJ012-8P8CX_Vertical"
+			(at 60.96 48.895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/on-shore-technology-inc/PJ012-8P8C1/6566534"
+			(at 60.96 48.895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 60.96 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "531ac5d2-81d6-4734-8ac0-e90068bda97d")
+		)
+		(pin "8"
+			(uuid "caae7836-4c78-4598-9e39-f69c2fcf48d6")
+		)
+		(pin "2"
+			(uuid "aca3e12e-aaf7-4bbd-8747-c1879b6e7cce")
+		)
+		(pin "3"
+			(uuid "c55b2611-431c-4f1a-8353-626476addd5f")
+		)
+		(pin "1"
+			(uuid "c23972c6-d971-4eb2-890f-7e426e18dd03")
+		)
+		(pin "5"
+			(uuid "a7a9279d-ad13-472d-bcf8-5739b0e2203f")
+		)
+		(pin "7"
+			(uuid "78ae7646-896d-477b-ac83-915bc63dfffe")
+		)
+		(pin "6"
+			(uuid "86ee9278-23f5-4659-a7e0-7e62a2dfb4e3")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "J101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 179.07 76.2 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40d9db1b-de83-4b6b-893c-8486b6122dfd")
+		(property "Reference" "R113"
+			(at 179.07 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 179.07 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 179.07 77.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 179.07 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 179.07 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c5036d6d-9f3f-46ba-9f76-b47cfdd6c17f")
+		)
+		(pin "1"
+			(uuid "2c19cdc8-d60d-4cad-a418-046ea85ba6ed")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 72.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45ea85d8-c761-43cf-8361-27cca8eb360d")
+		(property "Reference" "R101"
+			(at 74.93 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 74.93 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 74.93 74.168 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 74.93 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "28994b12-511f-4a0a-b656-5367fd3baf60")
+		)
+		(pin "1"
+			(uuid "47dd781d-1d0c-41d1-8d02-2a0e9d6c8344")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47035d88-d87f-4b75-bd57-f9b635383f84")
+		(property "Reference" "#PWR0101"
+			(at 77.47 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 41.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61c9ba2e-053d-4964-aedd-60f8789f9c73")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 77.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54c4b95b-e977-460c-ae23-50ab1bc93882")
+		(property "Reference" "R106"
+			(at 74.93 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 74.93 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 74.93 79.248 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 74.93 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "90c7e48f-c104-43bc-a5d5-d8733d53635d")
+		)
+		(pin "1"
+			(uuid "ed069d80-3907-4125-ac41-b40d83ce6266")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R106")
 					(unit 1)
 				)
 			)
@@ -2010,18 +3642,34 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 168.91 88.9 0)
-		(mirror y)
+		(lib_id "Device:R")
+		(at 179.07 41.91 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5ca59aa5-ece5-41dd-b83d-171a268d04da")
-		(property "Reference" "#PWR024"
-			(at 168.91 95.25 0)
+		(uuid "5ca1d83d-07fc-46d9-bff5-d0a951482185")
+		(property "Reference" "R110"
+			(at 179.07 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 179.07 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 179.07 43.688 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2029,16 +3677,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 168.91 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 88.9 0)
+		(property "Datasheet" "~"
+			(at 179.07 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2046,8 +3686,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 168.91 88.9 0)
+		(property "Description" "Resistor"
+			(at 179.07 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2055,22 +3695,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 168.91 88.9 0)
+		(property "LCSC" "C22787"
+			(at 179.07 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "2"
+			(uuid "fecc1d52-5ef6-4409-93c2-392d32be88a9")
 		)
 		(pin "1"
-			(uuid "2cc5bdb5-5fa7-4b70-a0cd-a04e122d6bc1")
+			(uuid "d8ea6e11-e5e8-4028-b4d8-b2026ea55b3f")
 		)
 		(instances
 			(project "siglent-la"
 				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(reference "#PWR024")
+					(reference "R110")
 					(unit 1)
 				)
 			)
@@ -2078,17 +3721,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 246.38 118.11 0)
-		(mirror y)
+		(at 71.12 74.93 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6ea7b219-79c3-4c6e-a5fb-519106e6fb05")
-		(property "Reference" "#PWR049"
-			(at 246.38 124.46 0)
+		(uuid "63dd8913-833e-4f2d-9cbc-299201d89fd5")
+		(property "Reference" "#PWR0105"
+			(at 77.47 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2097,15 +3739,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 246.38 123.19 0)
+			(at 74.93 74.9299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 118.11 0)
+			(at 71.12 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2114,7 +3757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 118.11 0)
+			(at 71.12 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2122,8 +3765,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 246.38 118.11 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2132,12 +3775,167 @@
 			)
 		)
 		(pin "1"
-			(uuid "72efc9a9-d551-416c-8360-67f0c099a5d1")
+			(uuid "7151ff7e-f232-43dc-a53d-6e802590a620")
 		)
 		(instances
 			(project "siglent-la"
 				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(reference "#PWR049")
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 82.55 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "659e3754-59b3-4438-887a-23874b148f31")
+		(property "Reference" "R107"
+			(at 74.93 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 74.93 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 74.93 84.328 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 74.93 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "86bd9548-fcc3-46a8-8417-a788ce701f1a")
+		)
+		(pin "1"
+			(uuid "c73e7a8f-8205-488a-a0f4-9bef88b10c88")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 179.07 36.83 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e5ecf6c-1c00-435c-9bf5-3139ae3f5e5c")
+		(property "Reference" "R109"
+			(at 179.07 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 179.07 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 179.07 38.608 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 179.07 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 179.07 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6e1e7dc2-68ab-4c53-b631-ea1af9066fa5")
+		)
+		(pin "1"
+			(uuid "0fc65626-8cad-48ed-a5aa-f379b8df4116")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R109")
 					(unit 1)
 				)
 			)
@@ -2145,17 +3943,17 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 246.38 118.11 0)
-		(mirror y)
+		(at 212.09 39.37 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "779a080b-a4ec-41e8-bac3-ea70e45b34b9")
-		(property "Reference" "#PWR050"
-			(at 246.38 124.46 0)
+		(uuid "76840db0-0118-470a-920a-8d306774eeb2")
+		(property "Reference" "#PWR0109"
+			(at 205.74 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2164,15 +3962,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 246.38 123.19 0)
+			(at 208.28 39.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 118.11 0)
+			(at 212.09 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2181,7 +3980,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 118.11 0)
+			(at 212.09 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2189,8 +3988,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 246.38 118.11 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2199,12 +3998,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "33519251-4f04-430d-8f21-20759d84a8df")
+			(uuid "94e9430d-ad4c-42ad-b1ad-2bdc54e47d4b")
 		)
 		(instances
 			(project "siglent-la"
 				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(reference "#PWR050")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -2277,34 +4076,169 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_Coaxial")
-		(at 237.49 118.11 0)
+		(lib_id "power:GND")
+		(at 205.74 88.9 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8f40c76b-65c8-4caa-a9ed-f11d200a2393")
-		(property "Reference" "J11"
-			(at 241.3 117.1332 0)
+		(fields_autoplaced yes)
+		(uuid "8589dd4a-19ea-4c69-86ef-0f1b1381141a")
+		(property "Reference" "#PWR0115"
+			(at 199.39 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "IPEX-004"
-			(at 241.3 119.6732 0)
+		(property "Value" "GND"
+			(at 201.93 88.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
-			(at 237.49 118.11 0)
+		(property "Footprint" ""
+			(at 205.74 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 205.74 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c49c665-4058-4f75-8a33-866469cab8e1")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 78.74 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b0e55c3-cb71-4c29-b59b-b96c4e476bf3")
+		(property "Reference" "#PWR0113"
+			(at 199.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 205.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "228ded95-9124-4660-874a-c8bd1219f6e0")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8dd6ca60-7644-4aa3-aa74-2da6dbe75caa")
+		(property "Reference" "R103"
+			(at 74.93 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 74.93 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 74.93 46.228 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2313,7 +4247,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 237.49 118.11 0)
+			(at 74.93 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2321,8 +4255,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 237.49 118.11 0)
+		(property "Description" "Resistor"
+			(at 74.93 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2330,16 +4264,25 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "f4066ecd-1a82-4228-a9db-0beb8c1ca116")
+		(property "LCSC" "C22787"
+			(at 74.93 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "886abb3c-b595-49e9-9d82-8849bf4a1728")
+			(uuid "f850de14-b041-4073-b5a3-aeed53a8835c")
+		)
+		(pin "1"
+			(uuid "16606a47-3e58-49a0-878c-02937b55df2f")
 		)
 		(instances
 			(project "siglent-la"
 				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(reference "J11")
+					(reference "R103")
 					(unit 1)
 				)
 			)
@@ -2347,17 +4290,17 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 237.49 123.19 0)
-		(mirror y)
+		(at 212.09 49.53 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cd8d256c-d351-4da6-8b8b-ff662d3c3962")
-		(property "Reference" "#PWR047"
-			(at 237.49 129.54 0)
+		(uuid "a5381d2a-79a8-4799-b476-3d5ddcde3477")
+		(property "Reference" "#PWR0111"
+			(at 205.74 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2366,15 +4309,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 237.49 128.27 0)
+			(at 208.28 49.5299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 123.19 0)
+			(at 212.09 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2383,7 +4327,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 123.19 0)
+			(at 212.09 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,8 +4335,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 237.49 123.19 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2401,12 +4345,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "26021800-1916-4373-a27e-97d8546f8514")
+			(uuid "885905ec-23f9-428f-abf7-9ae01019f7ec")
 		)
 		(instances
 			(project "siglent-la"
 				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(reference "#PWR047")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -2414,17 +4358,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 237.49 123.19 0)
-		(mirror y)
+		(at 71.12 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "df0f7cd9-f330-4035-a4e3-e3a26d2611ee")
-		(property "Reference" "#PWR048"
-			(at 237.49 129.54 0)
+		(uuid "a6a7bf94-bf56-45b3-87e4-61836a49964e")
+		(property "Reference" "#PWR0104"
+			(at 77.47 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,15 +4376,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 237.49 128.27 0)
+			(at 74.93 57.1499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 123.19 0)
+			(at 71.12 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2450,7 +4394,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 123.19 0)
+			(at 71.12 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2458,8 +4402,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 237.49 123.19 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2468,47 +4412,30 @@
 			)
 		)
 		(pin "1"
-			(uuid "2a3b5f23-b9ea-4c26-9daf-6b80d95639ea")
+			(uuid "16c50ceb-f265-4bd0-9a56-538ef33d93ff")
 		)
 		(instances
 			(project "siglent-la"
 				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(reference "#PWR048")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_Coaxial")
-		(at 168.91 83.82 0)
+		(lib_id "power:GND")
+		(at 212.09 44.45 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e4a3a6af-b0f2-4ee3-8588-032083a33feb")
-		(property "Reference" "J4"
-			(at 172.72 82.8432 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IPEX-004"
-			(at 172.72 85.3832 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical"
-			(at 168.91 83.82 0)
+		(fields_autoplaced yes)
+		(uuid "a990990a-2cd9-49d7-86c9-702fe2c19013")
+		(property "Reference" "#PWR0110"
+			(at 205.74 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2516,8 +4443,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
-			(at 168.91 83.82 0)
+		(property "Value" "GND"
+			(at 208.28 44.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2525,8 +4461,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 168.91 83.82 0)
+		(property "Datasheet" ""
+			(at 212.09 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2535,15 +4480,1135 @@
 			)
 		)
 		(pin "1"
-			(uuid "ffe04de8-715f-4b09-903b-6e8cdf02736d")
-		)
-		(pin "2"
-			(uuid "17676f79-5685-4634-8f88-4ebd90762a79")
+			(uuid "574b9558-8d39-401a-a2e9-ba18338b2c29")
 		)
 		(instances
 			(project "siglent-la"
 				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(reference "J4")
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 179.07 91.44 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af2ed6b3-dfef-4bf5-afe8-e0af8b05a20c")
+		(property "Reference" "R116"
+			(at 179.07 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 179.07 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 179.07 93.218 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 179.07 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 179.07 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8ddb8f73-e983-4f58-8de1-73f568786dd8")
+		)
+		(pin "1"
+			(uuid "46cdf4a4-4161-4032-8b61-8172c158419f")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba1ae08c-0b60-403b-8f5b-f3d034106409")
+		(property "Reference" "#PWR0103"
+			(at 77.47 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 52.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "551a3631-70df-4a17-a9e2-31689b03be84")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 212.09 54.61 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd2873e4-184f-45f0-ac18-46d5bbd38622")
+		(property "Reference" "#PWR0112"
+			(at 205.74 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 54.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "000bff70-cf22-410a-92eb-b77c57a289de")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "#PWR0112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ45")
+		(at 215.9 83.82 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd9b627a-ac37-4795-b913-7cbace252dc9")
+		(property "Reference" "J104"
+			(at 224.79 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RJHSE-5380"
+			(at 224.79 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_RJ:RJ45_OST_PJ012-8P8CX_Vertical"
+			(at 215.9 84.455 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/on-shore-technology-inc/PJ012-8P8C1/6566534"
+			(at 215.9 84.455 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 215.9 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "dc335b0e-7f71-4e7a-8c6c-3f82ce45ab06")
+		)
+		(pin "8"
+			(uuid "7ba3a95e-8f34-4bb5-964d-c164fd85c2c7")
+		)
+		(pin "2"
+			(uuid "32211841-60f1-4629-b538-ff14b347c476")
+		)
+		(pin "3"
+			(uuid "ef1cdd9f-319c-49b7-b0c4-5e6e60f4a3b2")
+		)
+		(pin "1"
+			(uuid "465cdd66-a0cd-455f-9098-77d92b943876")
+		)
+		(pin "5"
+			(uuid "cb449668-ea65-48f4-92eb-338cea0d2a8a")
+		)
+		(pin "7"
+			(uuid "38d28d73-5430-4a2c-8dfc-fb431c92fe11")
+		)
+		(pin "6"
+			(uuid "c6dcb5fc-b096-4e8b-b1fe-451b83ccfbd9")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "J104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 93.98 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4d8116a-53f4-4a0d-9d7f-70152d4bee32")
+		(property "Reference" "#PWR0116"
+			(at 199.39 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 205.74 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44aadea0-3299-48cc-8ba8-186acde22c77")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ45")
+		(at 60.96 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc448593-3f55-4510-aa4f-dc1e5a5a2a8e")
+		(property "Reference" "J102"
+			(at 60.96 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJHSE-5380"
+			(at 60.96 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_RJ:RJ45_OST_PJ012-8P8CX_Vertical"
+			(at 60.96 81.915 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/on-shore-technology-inc/PJ012-8P8C1/6566534"
+			(at 60.96 81.915 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 60.96 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "ae0103fa-b637-4741-a214-a216aa8c6a2d")
+		)
+		(pin "8"
+			(uuid "4fe1bbb3-8ce8-4352-941b-2c2a5acc2b6c")
+		)
+		(pin "2"
+			(uuid "6a40e461-03b4-4ca9-8d00-c480b64fd9d8")
+		)
+		(pin "3"
+			(uuid "29841405-171d-44c0-bf99-a5ef4213d40b")
+		)
+		(pin "1"
+			(uuid "2376d0a0-09fb-4841-b192-ca12ea3100f3")
+		)
+		(pin "5"
+			(uuid "b04f36f7-644f-43d1-9006-c156bf94511b")
+		)
+		(pin "7"
+			(uuid "ea29d808-79fe-4292-bda9-043283b2947b")
+		)
+		(pin "6"
+			(uuid "852c6635-75ca-4f6b-8b9b-03cb3b070e66")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "J102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 179.07 81.28 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0902b83-c6fd-41a9-8109-b91cbb7fefe3")
+		(property "Reference" "R114"
+			(at 179.07 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 179.07 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 179.07 83.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 179.07 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 179.07 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3603ba1b-7f3f-4a09-810b-83939d5b42f3")
+		)
+		(pin "1"
+			(uuid "3c270fa4-7b1d-4a02-bc42-3bc3df8096a5")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 179.07 52.07 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d47b0f37-95c3-4892-b36f-48ac93ca21e7")
+		(property "Reference" "R112"
+			(at 179.07 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 179.07 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 179.07 53.848 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 179.07 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 179.07 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4c439706-9d28-4597-9fe4-af315083e051")
+		)
+		(pin "1"
+			(uuid "a51a00ba-7f69-42e5-abfb-c63b9f4d0f17")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 49.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6a319ae-a4c0-40cc-9855-326b2e09602b")
+		(property "Reference" "R104"
+			(at 74.93 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 74.93 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 74.93 51.308 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 74.93 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4541ebfa-eb14-497c-8802-53d4021fdbe9")
+		)
+		(pin "1"
+			(uuid "848fd8f0-4664-4311-b4ba-606d908366ce")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0a54a05-f167-4305-aba2-7956c6438a1b")
+		(property "Reference" "R102"
+			(at 74.93 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 74.93 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 74.93 41.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 74.93 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "742b730e-bb31-4947-b17d-ca6d57088c0f")
+		)
+		(pin "1"
+			(uuid "c20df7bf-28cd-48c3-bef6-687698834023")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 179.07 86.36 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e69927d4-06fd-47b5-b13d-5d69026fbac3")
+		(property "Reference" "R115"
+			(at 179.07 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 179.07 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 179.07 88.138 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 179.07 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 179.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "87a5d014-32b3-4ae2-84d5-656d42794ee2")
+		)
+		(pin "1"
+			(uuid "6b44eb2d-5cc9-4e31-9a90-104b7be19a79")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3d853d5-67fc-49ef-9daa-0b297748d661")
+		(property "Reference" "#PWR0106"
+			(at 77.47 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 80.0099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d922140d-ed96-4fe8-9e29-5722953134df")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 179.07 46.99 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3e92771-db88-4e57-a24f-c367af3d381c")
+		(property "Reference" "R111"
+			(at 179.07 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120"
+			(at 179.07 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 179.07 48.768 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 179.07 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 179.07 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "456dfb51-412d-4c76-9626-4dcd1b28f5fd")
+		)
+		(pin "1"
+			(uuid "39480873-4dd1-425e-b981-fb413326420a")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "R111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f810c66f-546d-49f8-9259-ff1465a66c0f")
+		(property "Reference" "#PWR0102"
+			(at 77.47 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 46.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb679297-2a11-4cdb-8bd1-1043342c05ba")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 83.82 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc398285-0490-496a-960e-6de1478350fe")
+		(property "Reference" "#PWR0114"
+			(at 199.39 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 205.74 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "819b6796-8578-4e2a-b3ae-582226b1bf30")
+		)
+		(instances
+			(project "siglent-la"
+				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -2611,775 +5676,6 @@
 				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
 					(reference "#PWR017")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 142.24 66.675)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "01999fc9-8f59-447c-89d0-790f80ce5c7a")
-		(property "Sheetname" "input11"
-			(at 156.21 69.215 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 142.24 71.0696 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 142.24 68.58 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "2059b973-2955-45bd-8b93-0fe5d2afdbde")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "13")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 91.44 71.755)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "02f7f4d5-62e1-4f80-aa17-f8cf65ab71d1")
-		(property "Sheetname" "input2"
-			(at 83.82 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 69.85 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 104.14 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "cbf4fbfb-963d-423d-badb-b0f3423842ad")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 142.24 56.515)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "1642aa84-4dbb-4e7e-bfc1-928eeb4c145b")
-		(property "Sheetname" "input13"
-			(at 156.21 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 142.24 60.9096 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 142.24 58.42 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "f747047b-8361-4ce6-9922-3c0ccace4800")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "15")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 142.24 71.755)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "48c806c6-9663-43bc-93c0-1bbb0e03c5dc")
-		(property "Sheetname" "input10"
-			(at 156.21 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 142.24 76.1496 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 142.24 73.66 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "45f4d804-2125-476e-8437-78aa1c778f38")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "12")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 142.24 46.355)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "6357ef9b-6ac6-40dc-b745-60c5c16f4508")
-		(property "Sheetname" "input15"
-			(at 156.21 48.895 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 142.24 50.7496 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 142.24 48.26 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9dd8f982-ed1a-4d3e-8689-05c136b38ee7")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "17")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 91.44 46.355)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "6551c31f-628d-41e6-95c1-0de1e74c7e4c")
-		(property "Sheetname" "input7"
-			(at 83.82 48.895 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 69.85 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 104.14 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "c78e21b0-a4d9-4234-88cd-1b28577232d3")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 142.24 76.835)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "6cb83b01-a8f3-47c2-8989-7a16036d6e75")
-		(property "Sheetname" "input9"
-			(at 156.21 79.375 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 142.24 81.2296 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 142.24 78.74 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "8ef6189d-5710-463f-ab84-69d15ef03e8e")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "11")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 142.24 61.595)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "7a5dae48-7d04-42d9-955b-c0b060e50cbc")
-		(property "Sheetname" "input12"
-			(at 156.21 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 142.24 65.9896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 142.24 63.5 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "a9b1960c-de60-4501-96ad-7e0f3306af25")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "14")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 91.44 51.435)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "9b94c788-44e2-48be-b76e-a130cfacf74c")
-		(property "Sheetname" "input6"
-			(at 83.82 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 70.485 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 104.14 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "888747d1-8116-4f71-97d1-6fbfa3a5bbda")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 91.44 76.835)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "ba45fb8d-61ed-4f7a-94b7-9f1148c1f1ca")
-		(property "Sheetname" "input1"
-			(at 83.82 79.375 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 70.485 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 104.14 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "68683d07-9edf-4462-a508-712cd118b8d7")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 142.24 51.435)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "be7013a3-c043-492f-8db9-09e05c8cf176")
-		(property "Sheetname" "input14"
-			(at 156.21 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 142.24 55.8296 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 142.24 53.34 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "a3fd3ae3-a699-417c-a627-bf67b3aabeb1")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "16")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 91.44 61.595)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "bf3d1e37-fd65-4bb7-bdd7-17349d212205")
-		(property "Sheetname" "input4"
-			(at 83.82 64.135 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 70.485 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 104.14 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "573f7d9a-ff35-428e-82b7-e0d6c840149f")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 91.44 66.675)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "c2c0bd24-3036-4aa7-8aa4-3d178103b4ef")
-		(property "Sheetname" "input3"
-			(at 83.82 69.215 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 69.85 67.945 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 104.14 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "697c5741-a466-45ce-8c34-7c2a378d3f8c")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 91.44 81.915)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "d3427be5-2304-488d-997b-ceedc2593d44")
-		(property "Sheetname" "input0"
-			(at 83.82 84.455 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 70.485 83.185 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 104.14 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "3c036b50-8b9e-4a82-93b0-73128dcd7450")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 91.44 56.515)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "eceb2c98-9efc-4202-8925-a7b441708287")
-		(property "Sheetname" "input5"
-			(at 83.82 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 70.485 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 104.14 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "4cb759c3-aa23-4865-8ec1-9e56e519069f")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 142.24 81.915)
-		(size 12.7 3.81)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f242f688-0ef7-4685-b01c-b762862c983d")
-		(property "Sheetname" "input8"
-			(at 156.21 84.455 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Sheetfile" "input.kicad_sch"
-			(at 120.015 83.185 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "OUT" input
-			(at 142.24 83.82 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "52bed447-397e-44a7-a191-e871cafa37f6")
-		)
-		(instances
-			(project "siglent-la"
-				(path "/bd2565cb-fb9c-41f5-8760-181b016209dc"
-					(page "10")
 				)
 			)
 		)
